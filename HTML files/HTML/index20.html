@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>
+        Current time.
+    </p>
+
+    <!-- <button onclick="time()+Date()">
+        Click here to know The Current time.
+    </button> -->
+
+    <script>
+        let greeting;
+
+        let now=new Date();
+        let Hours=now.getHours();
+        let Minutes=now.getMinutes();
+        let Seconds=now.getSeconds();
+
+       
+        if(Seconds<10)
+        {
+            document.write("0"+Seconds);
+        }
+        if(Minuts<10)
+        {
+            document.write("0"+Minuts);
+
+        }
+        if(Hours<12)
+        {
+            greeting="Good morning";
+
+        }
+        else if(Hours<17)
+        {
+            greeting="Good Afternoon";
+        }
+        else{
+            greeting="Good Evening";
+        }
+       
+        
+
+        // document.write("The current time is According to Indian time is:");
+         document.write( Date());
+    </script>
+</body>
+</html>
